@@ -1,7 +1,36 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    margin: 0px;
+  }
   body {
-    background-color: aquamarine;
+    background-image: linear-gradient(to bottom, white, black);
+  }
+  main {
+    left: 25%;
+    height: 250px;
+    width: 600px;
+  }
+  section {
+    display: flex;
+    height: 250px;
+    width: 600px;
+  }
+  #formulario {
+    width: 400px;
+  }
+  #imagem {
+    border-radius: 15px 0px 0px 15px;
+    height: 250px;
+    width: 200px;
+    float: top;
+    background-position: bottom right;
+  }
+  input {
+    width: 338px;
+  }
+  .button {
+    width: 390px;
   }
 }
