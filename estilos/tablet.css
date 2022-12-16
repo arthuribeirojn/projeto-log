@@ -1,19 +1,18 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  * {
-    margin: 0px;
-  }
   body {
-    background-image: linear-gradient(to bottom, white, black);
-  }
-  main {
-    left: 25%;
-    height: 250px;
-    width: 600px;
+    position: relative;
+    background-color: aquamarine;
   }
   section {
     display: flex;
+    height: 250px;
+    width: 600px;
+  }
+  main {
+    transform: translate(-15%, 130%);
+    left: 25%;
     height: 250px;
     width: 600px;
   }
@@ -32,5 +31,54 @@
   }
   .button {
     width: 390px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    position: relative;
+    background-color: lightblue;
+  }
+  section {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  main {
+    transform: translate(-50%, 110%);
+    left: 50%;
+    top: 50%;
+    height: 300px;
+    width: 800px;
+  }
+
+  #imagem {
+    border-radius: 0px 15px 15px 0px;
+    height: 300px;
+    width: 400px;
+    float: top;
+    background-position: right top;
+  }
+  #formulario {
+    width: 400px;
+  }
+  label {
+    color: white;
+    padding: 13px;
+  }
+  input {
+    top: 5px;
+    margin: 5px;
+    color: white;
+    top: 10px;
+    height: 40px;
+    width: 320px;
+  }
+  .button {
+    margin: 5px;
+    height: 40px;
+    width: 390px;
+  }
+  .button:hover {
+    color: black;
+    background-color: white;
   }
 }
