@@ -34,7 +34,6 @@
   }
 
   section#login {
-    flex-direction: row-reverse;
     height: 300px;
     width: 800px;
     transform: translate(-50%, -50%);
