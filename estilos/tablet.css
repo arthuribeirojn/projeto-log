@@ -2,83 +2,62 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
-    position: relative;
-    background-color: aquamarine;
+    background-image: linear-gradient(to bottom(black, white));
   }
-  section {
+
+  section#login {
     display: flex;
     height: 250px;
     width: 600px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
   }
-  main {
-    transform: translate(-15%, 130%);
-    left: 25%;
-    height: 250px;
-    width: 600px;
-  }
-  #formulario {
-    width: 400px;
-  }
-  #imagem {
+
+  section#login > div#imagem {
     border-radius: 15px 0px 0px 15px;
     height: 250px;
-    width: 200px;
-    float: top;
-    background-position: bottom right;
+    width: 400px;
+
+    background-position: right bottom;
   }
   input {
-    width: 338px;
+    width: 320px;
   }
   .button {
-    width: 390px;
+    width: 370px;
   }
 }
 @media screen and (min-width: 992px) {
   body {
-    position: relative;
     background-color: lightblue;
   }
-  section {
+
+  section#login {
     flex-direction: row-reverse;
-    display: flex;
-  }
-  main {
-    transform: translate(-50%, 110%);
-    left: 50%;
-    top: 50%;
     height: 300px;
     width: 800px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
   }
 
-  #imagem {
-    border-radius: 0px 15px 15px 0px;
+  section#login > div#imagem {
+    border-radius: 0px 20px 20px 0px;
     height: 300px;
-    width: 400px;
-    float: top;
+    width: 290px;
+    float: right;
     background-position: right top;
   }
-  #formulario {
-    width: 400px;
-  }
-  label {
-    color: white;
-    padding: 13px;
-  }
+
   input {
     top: 5px;
-    margin: 5px;
     color: white;
-    top: 10px;
     height: 40px;
-    width: 320px;
+    width: 420px;
   }
   .button {
-    margin: 5px;
     height: 40px;
-    width: 390px;
-  }
-  .button:hover {
-    color: black;
-    background-color: white;
+    width: 460px;
   }
 }
