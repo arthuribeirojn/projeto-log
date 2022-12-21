@@ -37,6 +37,7 @@ section#login {
 }
 
 section#login > div#imagem {
+  display: block;
   border-radius: 20px 20px 0px 0px;
   height: 200px;
   background-size: cover;
@@ -50,10 +51,11 @@ section#login > div#formulario {
 
 h1 {
   font-size: 20px;
-  padding: 4px;
+  padding: 5px;
   text-align: center;
 }
 p {
+  padding: 5px;
   text-align: left;
 }
 
@@ -68,7 +70,7 @@ input {
   background-color: #49a09d42;
   border: 3px solid #5f2c82;
   margin-top: 3px;
-  width: 165px;
+  width: 180px;
   border-radius: 10px;
   height: 35px;
 }
@@ -81,7 +83,7 @@ input:hover {
   border: none;
   background-color: #49a09d;
   height: 35px;
-  width: 220px;
+  width: 230px;
   border-radius: 10px;
 }
 .button:hover {
