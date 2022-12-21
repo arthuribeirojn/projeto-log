@@ -7,24 +7,20 @@
 
   section#login {
     height: 250px;
-    width: 90vw;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
+    width: 80vw;
   }
 
   section#login > div#imagem {
+    float: left;
     border-radius: 15px 0px 0px 15px;
-    height: 250px;
-    width: 400px;
-
+    height: 100%;
+    width: 30%;
     background-position: right bottom;
   }
-  input {
-    width: 320px;
-  }
-  .button {
-    width: 370px;
+  section#login > div#formulario {
+    padding: 5px;
+    float: right;
+    width: 70%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -33,27 +29,22 @@
   }
 
   section#login {
-    height: 300px;
-    width: 800px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
+    width: 950px;
   }
 
   section#login > div#imagem {
     border-radius: 0px 20px 20px 0px;
-    height: 300px;
-    width: 290px;
+    height: 100%;
+    width: 50%;
     float: right;
     background-position: right top;
   }
-
-  input {
-    top: 5px;
-    color: white;
-    height: 40px;
-    width: 420px;
+  section#login > div#formulario {
+    padding: 5px;
+    float: left;
+    width: 50%;
   }
+
   .button {
     height: 40px;
     width: 460px;
