@@ -6,7 +6,7 @@
   }
 
   section#login {
-    height: 250px;
+    height: 280px;
     width: 80vw;
   }
 
@@ -29,6 +29,7 @@
   }
 
   section#login {
+    height: 350px;
     width: 950px;
   }
 
@@ -44,9 +45,11 @@
     float: left;
     width: 50%;
   }
-
-  .button {
-    height: 40px;
-    width: 460px;
+  div#formulario > h1 {
+    font-size: 2em;
+  }
+  div#formulario > p {
+    font-size: 1em;
+    margin: 20px 0px;
   }
 }

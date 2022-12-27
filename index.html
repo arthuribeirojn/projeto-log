@@ -7,6 +7,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css" media="all" />
     <link rel="stylesheet" href="estilos/mediaquery.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -18,37 +22,42 @@
             Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
             poder fazer as configurações o seu ambiente.
           </p>
-          <form action="login.php" method="post">
-            <label for="iusu"
-              ><img
-                src="image/person.png"
-                alt="usuário"
-                srcset=""
-                width="25px"
-                height="25px"
-            /></label>
-            <input
-              type="text"
-              name="usu"
-              id="iusu"
-              autocomplete="username"
-              required
-            />
 
-            <label for="isenha"
-              ><img src="image/key.png" alt="senha" width="25px" height="25px"
-            /></label>
-            <input
-              type="password"
-              name="senha"
-              id="isenha"
-              autocomplete="current-password"
-              maxlength="9"
-              placeholder="sua senha"
-            />
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <span class="material-icons">person</span>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Seu e-mail"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <label for="ilogin"></label>
+            </div>
+            <div class="campo">
+              <span class="material-icons">vpn_key</span>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                autocomplete="current-password"
+                maxlength="9"
+                placeholder="sua senha"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+              <label for="isenha"></label>
+            </div>
+
+            <input type="submit" value="Entrar" />
+            <a href="esqueci a senha.html" class="button"
+              >Esqueci a senha <i class="material-icons">mail</i></a
+            >
           </form>
-          <input type="submit" value="Entrar" class="button" />
-          <input type="submit" value="Esqueci a senha" class="button" />
         </div>
       </section>
     </main>
